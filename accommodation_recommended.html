@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tropikawi | Accommodation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Verdana', sans-serif;
+    }
+	body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: white;
+    }
+    header {
+      background-color: #AEDCAE;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .header-left img {
+      max-width: 60px;
+      height: auto;
+      border-radius: 50%;
+    }
+    .header-left span {
+      font-size: 1.8rem;
+      font-family: 'Brush Script MT', cursive;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav li {
+      position: relative;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav li:hover ul {
+      display: block;
+    }
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: #AEDCAE;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+    nav li ul li {
+      padding: 0.3rem 0;
+    }
+	    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 2rem;
+      z-index: 10;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      color: #2b4c2a;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .box {
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    .box h3 {
+      color: #336633;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #AEDCAE;
+      text-align: center;
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-left">
+    <img src="image/logo.jpg" alt="Tropikawi Logo">
+    <span>Tropikawi</span>
+  </div>
+  <div class="navbar-right">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attraction.html">Attraction</a>
+          <ul>
+            <li><a href="attraction-day.html">Day</a></li>
+            <li><a href="attraction-night.html">Night</a></li>
+            <li><a href="attraction-all.html">Day and Night</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Rental</a>
+          <ul>
+            <li><a href="rental-car.html">Car</a></li>
+            <li><a href="rental-motorcycle.html">Motorcycle</a></li>
+            <li><a href="rental-yacht.html">Yacht</a></li>
+          </ul>
+        </li>
+        <li><a href="tourist-activities">Tourist Activities</a>
+          <ul>
+            <li><a href="activity-water.html">Water Activities</a></li>
+            <li><a href="activity-adventure.html">Adventure Activities</a></li>
+            <li><a href="activity-wildlife.html">Wildlife Activities</a></li>
+            <li><a href="activity-cultural.html">Cultural and Historical Activities</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Promotion Package</a>
+          <ul>
+            <li><a href="promo-activities.html">Activities</a></li>
+            <li><a href="promo-tour.html">Island Tour</a></li>
+            <li><a href="promo-spa.html">Treatment and Spa</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Accommodation</a>
+          <ul>
+            <li><a href="accommodation_recommended.html">Recommended</a></li>
+            <li><a href="accommodation_cheaper.html">Cheaper Prices</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <h2>Recommended Accommodation</h2>
+  <div class="section">
+    <div class="box">
+      <h3>Pelangi Beach Resort & Spa</h3>
+      <p>Luxury beachfront resort with stunning chalets and a large pool area. Ideal for family vacations or romantic getaways.
+	<br>
+    	<br><a href="https://www.tripadvisor.com.my/Hotel_Review-g1096282-d301005-Reviews-Pelangi_Beach_Resort_Spa_Langkawi-Pantai_Cenang_Langkawi_Langkawi_District_Kedah.html" target="_blank">
+      Book Now on Tripadvisor
+    </a>
+	</p>
+	</div>
+
+    <div class="box">
+      <h3>Berjaya Langkawi Resort</h3>
+      <p>Located in a lush rainforest near the beach, this resort offers a peaceful escape with premium services and facilities.
+	<br>
+    	<br><a href="https://www.tripadvisor.com.my/Hotel_Review-g2699668-d307706-Reviews-Berjaya_Langkawi_Resort-Padang_Mat_Sirat_Langkawi_Langkawi_District_Kedah.html" target="_blank">
+      Book Now on Tripadvisor
+    </a>
+	</p>
+    </div>
+
+    <div class="box">
+      <h3>The Datai Langkawi</h3>
+      <p>An exclusive luxury resort nestled in the rainforest with private beach access and award-winning hospitality.
+	<br>
+    	<br><a href="https://www.tripadvisor.com.my/Hotel_Review-g10838083-d302014-Reviews-The_Datai_Langkawi-Datai_Langkawi_Langkawi_District_Kedah.html" target="_blank">
+      Book Now on Tripadvisor
+    </a>
+	</p>
+    </div>
+
+    <div class="box">
+      <h3>Four Seasons Resort Langkawi</h3>
+      <p>Combining nature and luxury, this resort features spacious villas, fine dining, and wellness spas right by the sea.
+	<br>
+    	<br><a href="https://www.tripadvisor.com.my/Hotel_Review-g10838062-d311053-Reviews-Four_Seasons_Resort_Langkawi_Malaysia-Tanjung_Rhu_Langkawi_Langkawi_District_Kedah.html" target="_blank">
+      Book Now on Tripadvisor
+    </a>
+
+	</p>
+    </div>
+  </div>
+
+
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+   
+  formbutton("create", {
+    action: "https://formspree.io/f/meokvbav",
+    title: "Send us your feedback",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Your feedback about our site:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#AEDCAE"
+      },
+      button: {
+        backgroundColor: "#AEDCAE"
+      }
+    }
+  });
+</script>
+    <footer>
+    &copy; 2025 Tropikawi. All rights reserved. | www.tropikawi.com
+  </footer>
+</body>
+</html>
