@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>rental-car.html</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Verdana', sans-serif;
+    }
+    body {
+      background-color: white;
+    }
+    header {
+      background-color: #AEDCAE;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .header-left img {
+      max-width: 60px;
+      height: auto;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+    .header-left span {
+      font-size: 1.8rem;
+      font-family: 'Brush Script MT', cursive;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav li {
+      position: relative;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav li:hover ul {
+      display: block;
+    }
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: #AEDCAE;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+    nav li ul li {
+      padding: 0.3rem 0;
+    }
+    .slider {
+      width: 100%;
+      height: 90vh;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex: 1;
+    }
+    .caption {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 2rem;
+      z-index: 10;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+    .about, .contact {
+      padding: 2rem;
+      text-align: center;
+    }
+    footer {
+      background-color: #AEDCAE;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+.contact-box {
+  background-color: #f4f4f4;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 1000px;
+}
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-left">
+    <img src="image/logo.jpg" alt="Tropikawi Logo">
+    <span>Tropikawi</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attraction.html">Attraction</a>
+        <ul>
+          <li><a href="attraction-day.html">Day</a></li>
+          <li><a href="attraction-night.html">Night</a></li>
+          <li><a href="attraction-all.html">Day and Night</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Rental</a>
+        <ul>
+          <li><a href="rental-car.html">Car</a></li>
+          <li><a href="rental-motorcycle.html">Motorcycle</a></li>
+          <li><a href="rental-yacht.html">Yacht</a></li>
+        </ul>
+      </li>
+      <li><a href="tourist-activities.html">Tourist Activities</a>
+        <ul>
+          <li><a href="activity-water.html">Water Activities</a></li>
+		  <li><a href="activity-adventure.html">Adventure Activities</a></li>
+		  <li><a href="activity-wildlife.html">Wildlife Activities</a></li>
+          <li><a href="activity-cultural.html">Cultural and Historical Activities</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Promotion Package</a>
+        <ul>
+          <li><a href="promo-activities.html">Activities</a></li>
+          <li><a href="promo-tour.html">Island Tour</a></li>
+          <li><a href="promo-spa.html">Treatment and Spa</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Accommodation</a>
+        <ul>
+          <li><a href="accommodation_recommended.html">Recommended</a></li>
+          <li><a href="accommodation_cheaper.html">Cheaper Prices</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<h2>Car</h2>
+
+<table style="width:100%">
+  <tr>
+    <td><img src="image/axia.png" alt="axia"></td>
+    <td><img src="image/myvi.png" alt="myvi"></td>
+  </tr>
+  <tr>
+    <td><img src="image/axia-variant.png" alt="axia-variant"></td>
+    <td><img src="image/honda-jazz.png" alt="honda-jazz"></td>
+  </tr>
+</table>
+
+<h2>Rent a car at your fingertips</h2>
+<p>You get to search and explore the Langkawi with the vehicle that suit your style and budget while also make your travel experience more memorable and local. To know more information,<a href="https://www.langkawibook.my/">Press here</a></p>
+
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+   
+  formbutton("create", {
+    action: "https://formspree.io/f/meokvbav",
+    title: "Send us your feedback",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Your feedback about our site:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#AEDCAE"
+      },
+      button: {
+        backgroundColor: "#AEDCAE"
+      }
+    }
+  });
+</script>
+
+  <footer>
+    &copy; 2025 Tropikawi. All rights reserved. | www.tropikawi.com
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tropikawi - Langkawi Tourism</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Verdana', sans-serif;
+    }
+    body {
+      background-color: white;
+    }
+    header {
+      background-color: #AEDCAE;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .header-left img {
+      max-width: 60px;
+      height: auto;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+    .header-left span {
+      font-size: 1.8rem;
+      font-family: 'Brush Script MT', cursive;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav li {
+      position: relative;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav li:hover ul {
+      display: block;
+    }
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: #AEDCAE;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+    nav li ul li {
+      padding: 0.3rem 0;
+    }
+    .slider {
+      width: 100%;
+      height: 90vh;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .slide img {
+      width: 100%;
+      height: 600px; 
+      object-fit: cover;
+    }
+    .caption {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 2rem;
+      z-index: 10;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+    .about, .contact {
+      padding: 2rem;
+      text-align: center;
+    }
+    footer {
+      background-color: #AEDCAE;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+.contact-box {
+  background-color: #f4f4f4;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 1000px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="image/logo.jpg" alt="Tropikawi Logo">
+      <span>Tropikawi</span>
+    </div>
+   <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="attraction.html">Attraction</a>
+      <ul>
+        <li><a href="attraction-day.html">Day</a></li>
+        <li><a href="attraction-night.html">Night</a></li>
+        <li><a href="attraction-all.html">Day and Night</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Rental</a>
+      <ul>
+        <li><a href="rental-car.html">Car</a></li>
+        <li><a href="rental-motorcycle.html">Motorcycle</a></li>
+        <li><a href="rental-yacht.html">Yacht</a></li>
+      </ul>
+    </li>
+    <li><a href="tourist-activities.html">Tourist Activities</a>
+      <ul>
+        <li><a href="activity-water.html">Water Activities</a></li>
+        <li><a href="activity-adventure.html">Adventure Activities</a></li>
+        <li><a href="activity-wildlife.html">Wildlife Activities</a></li>
+        <li><a href="activity-cultural.html">Cultural and Historical Activities</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Promotion Package</a>
+      <ul>
+        <li><a href="promo-activities.html">Activities</a></li>
+        <li><a href="promo-tour.html">Island Tour</a></li>
+        <li><a href="promo-spa.html">Treatment and Spa</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Accommodation</a>
+      <ul>
+        <li><a href="accommodation_recommended.html">Recommended</a></li>
+        <li><a href="accommodation_cheaper.html">Cheaper Prices</a></li>
+      </ul>
+</nav>
+  </header>
+
+   <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="image/helang.jpg""tugu helang">
+                <div class="caption">The Infamous Dataran Lang</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="image/skybridge_1.jpg" alt="Sky Bridge">
+                <div class="caption">The high Sky Bridge for a thrilling experience</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="image/geoforest_1.jpg" alt="Kilim Geoforest Park">
+                <div class="caption">The memorizing view of the nature in Langkawi</div>
+            </div>
+        </div>
+    </main>
+
+
+
+ <section class="about contact-box">
+  <h2>About Us</h2>
+	<br>
+  <p>Welcome to Tropikawi! – Your Gateway to Langkawi's Natural Wonders 
+	<br>
+	<br>Tropikawi is a trusted travel agency based in the heart of Langkawi, Malaysia’s most loved tropical island. Since our founding in 2018, we have been committed to helping travelers from all over the world explore the beauty, culture, and charm of this island paradise. Whether you're visiting for the first time or returning for another adventure, our goal is to make your experience unforgettable. 
+	<br>
+	<br>At Tropikawi, we believe that Langkawi is more than just a destination, it’s a place full of hidden gems waiting to be discovered. From stunning white sand beaches and clear turquoise waters to lush green rainforests and majestic waterfalls, the island has something for everyone. That’s why we offer a wide variety of travel packages and experiences that are carefully designed to suit different travel styles, budgets, and interests. 
+	<br>
+	<br>Our team is made up of passionate locals who know Langkawi inside and out. We take pride in sharing the stories, traditions, and natural beauty of our island with every visitor. Whether you're looking for a peaceful escape, a fun filled family holiday, or an adventurous trip filled with activities, we’re here to guide you every step of the way. 	<br>
+	<br>Let Tropikawi show you the best that Langkawi has to offer from the popular attractions to the hidden treasures only the locals know about.</p>
+</section>
+
+<section class="contact contact-box">
+  <h2>Contact Us</h2>
+	<br>
+  <p>Email: contact@tropikawi.com</p>
+	<br>
+  <p>Phone: +60 12-345 6789</p>
+	<br>
+  <p>Address: Lot 45, Jalan Pantai Cenang, 07000 Langkawi, Kedah, Malaysia</p>
+</section>
+
+<section class="contact-box" style="text-align: center;">
+  <h2>Click to know more about our group Members</h2>
+  <br>
+  <a href="group.html">
+    <button style="padding: 0.75rem 1.5rem; background-color: #AEDCAE; color: white; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer;">
+      Meet the Team
+    </button>
+  </a>
+</section>
+
+  <footer>
+    &copy; 2025 Tropikawi. All rights reserved. | www.tropikawi.com
+  </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); 
+        }
+    </script>
+
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+   
+  formbutton("create", {
+    action: "https://formspree.io/f/meokvbav",
+    title: "Send us your feedback",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Your feedback about our site:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#AEDCAE"
+      },
+      button: {
+        backgroundColor: "#AEDCAE"
+      }
+    }
+  });
+</script>
+</body>
+</html>
+

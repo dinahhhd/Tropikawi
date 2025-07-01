@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tropikawi - Langkawi Tourism</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Verdana', sans-serif;
+    }
+    body {
+      background-color: white;
+    }
+    header {
+      background-color: #AEDCAE;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .header-left img {
+      max-width: 60px;
+      height: auto;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+    .header-left span {
+      font-size: 1.8rem;
+      font-family: 'Brush Script MT', cursive;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav li {
+      position: relative;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav li:hover ul {
+      display: block;
+    }
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: #AEDCAE;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+    nav li ul li {
+      padding: 0.3rem 0;
+    }
+    .slider {
+      width: 100%;
+      height: 90vh;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .slide img {
+      width: 100%;
+      height: 600px; 
+      object-fit: cover;
+    }
+    .caption {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 2rem;
+      z-index: 10;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+    .about, .contact {
+      padding: 2rem;
+      text-align: center;
+    }
+    footer {
+      background-color: #AEDCAE;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+      margin-top: 3rem; /* <-- THIS is the only change to separate it */
+    }
+    .contact-box {
+      background-color: #f4f4f4;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="image/logo.jpg" alt="Tropikawi Logo">
+      <span>Tropikawi</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attraction.html">Attraction</a>
+          <ul>
+            <li><a href="attraction-day.html">Day</a></li>
+            <li><a href="attraction-night.html">Night</a></li>
+            <li><a href="attraction-all.html">Day and Night</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Rental</a>
+          <ul>
+            <li><a href="rental-car.html">Car</a></li>
+            <li><a href="rental-motorcycle.html">Motorcycle</a></li>
+            <li><a href="rental-yacht.html">Yacht</a></li>
+          </ul>
+        </li>
+        <li><a href="tourist-activities.html">Tourist Activities</a>
+          <ul>
+            <li><a href="activity-water.html">Water Activities</a></li>
+            <li><a href="activity-adventure.html">Adventure Activities</a></li>
+            <li><a href="activity-wildlife.html">Wildlife Activities</a></li>
+            <li><a href="activity-cultural.html">Cultural and Historical Activities</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Promotion Package</a>
+          <ul>
+            <li><a href="promo-activities.html">Activities</a></li>
+            <li><a href="promo-tour.html">Island Tour</a></li>
+            <li><a href="promo-spa.html">Treatment and Spa</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Accommodation</a>
+          <ul>
+            <li><a href="accommodation_recommended.html">Recommended</a></li>
+            <li><a href="accommodation_cheaper.html">Cheaper Prices</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="image/dataran_lang.jpg" alt="Tugu Helang">
+      <div class="caption">The Infamous Tugu Helang</div>
+    </div>
+    <div class="slide fade">
+      <img src="image/skybridge.jpg" alt="Sky Bridge">
+      <div class="caption">The memorizing view of the nature in Langkawi</div>
+    </div>
+    <div class="slide fade">
+      <img src="image/geoforest.jpg" alt="Kilim Geoforest Park">
+      <div class="caption">The beauty of nature view</div>
+    </div>
+  </div>
+
+  <section class="about contact-box">
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        const slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); 
+      }
+    </script>
+
+    <h1 style="background-color:#9AB9AD;" "colour:darkgreen;"> Daytime Attractions </h1>
+    <br>
+    <img src="image/dataran_lang.JPG" alt="Dataran_Lang" style="width:400px; height:300px;">
+    <p style="margin-top:10px;"> <b> Dataran Helang</b></p>
+    <p style="margin-top:10px; text-align: justify; line-height: 1.5;"> 
+	Located in Kuah Town, this stunning waterfront plaza features a magnificent 12-meter-tall sculpture of a reddish-brown eagle poised for flight-symbolizing the island's name and spirit. Surrounded by serene waters, beautifully landscaped terraces, and picturesque bridges, Dataran Helang is perfect for a relaxing stroll, memorable photos, or simply soaking in the scenic views of the harbor. Whether you're visiting at sunrise or under the evening lights, it's a must-see destination that captures the essence of Langkawi. </p>
+    <br><br>
+    <img src="image/skywalk.JPG" alt="Skywalk_Langkawi" style="width:400px; height:300px;">
+    <p style="margin-top:10px;"> <b> Skywalk</b></p>
+    <p style="margin-top:10px; text-align: justify; line-height: 1.5;"> 
+	Experience breathtaking views like never before at the Langkawi Skywalk, one of the island's most thrilling attractions. Suspended high above Gunung Mat Cincang, this curved pedestrian bridge offers panoramic vistas of lush rainforests, dramatic mountain peaks, and the shimmering Andaman Sea. Accessible via the Langkawi Cable Car, the Skywalk combines adventure with awe-inspiring scenery, making it a must-visit for nature lovers and thrill-seekers alike. With its unique design and glass-bottom sections for a heart-pounding perspective, the Langkawi Skywalk promises an unforgettable journey above the clouds.</p>
+    <br><br>
+    <img src="image/skybridge.JPG" alt="Skybridge_Langkawi" style="width:400px; height:300px;">
+    <p style="margin-top:10px;"><b> Skybridge</b></p>
+    <p style="margin-top:10px; text-align: justify; line-height: 1.5;"> 
+	Step into the sky at the Langkawi Sky Bridge, a world-renowned architectural marvel suspended 660 meters above sea level. Stretching 125 meters across the peak of Gunung Mat Cincang, this curved suspension bridge offers jaw-dropping views of Langkawi's emerald rainforests, rugged mountains, and the glistening sea beyond. Accessible via an exhilarating cable car ride, the Sky Bridge features viewing platforms and glass panels for a thrilling, unobstructed look beneath your feet. Whether you're a photographer, adventurer, or nature enthusiast, the Langkawi Sky Bridge delivers an unforgettable experience at the top of the island.</p>
+    <br><br>
+    <img src="image/cab.JPG" alt="Langkawi_Cab" style="width:400px; height:300px;">
+    <p style="margin-top:10px;"><b> Cable Car</b></p>
+    <p style="margin-top:10px; text-align: justify; line-height: 1.5;"> 
+	Soar above the treetops with the Langkawi Cable Car, also known as the SkyCab-an unmissable experience that takes you on a breathtaking journey to the peak of Gunung Mat Cincang, Langkawi's second-highest mountain. The 15-minute ride offers panoramic views of lush rainforest, cascading waterfalls, and distant islets scattered across the Andaman Sea. Along the way, make a stop at the scenic viewing platforms and enjoy cool mountain breezes and unforgettable photo opportunities. With glass-bottom gondolas and 360-degree vistas, the Langkawi Cable Car is the perfect blend of adventure and natural beauty, making it a must-do for every visitor.</p>
+    <br><br>
+  </section>
+
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {
+      action: "https://formspree.io/f/meokvbav",
+      title: "Send us your feedback",
+      fields: [
+        { type: "email", label: "Email:", name: "email", required: true, placeholder: "your@email.com" },
+        { type: "textarea", label: "Your feedback about our site:", name: "message", placeholder: "What's on your mind?" },
+        { type: "submit" }
+      ],
+      styles: {
+        title: { backgroundColor: "#AEDCAE" },
+        button: { backgroundColor: "#AEDCAE" }
+      }
+    });
+  </script>
+
+  <footer>
+    &copy; 2025 Tropikawi. All rights reserved. | www.tropikawi.com
+  </footer>
+</body>
+</html>
+
+
