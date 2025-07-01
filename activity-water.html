@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tropikawi: Water Activities</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+    }
+
+    header {
+      background-color: #AEDCAE;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .header-left img {
+      max-width: 60px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .header-left span {
+      font-size: 1.8rem;
+      font-family: 'Brush Script MT', cursive;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: #AEDCAE;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+
+    nav li ul li {
+      padding: 0.3rem 0;
+    }
+
+    .button-section {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 100px 0 40px 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .button {
+      text-decoration: none;
+      color: black;
+      background-color: #DDF2E0;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 220px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .button img {
+      width: 200px;
+      height: 200px;
+      border-radius: 4px;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+	
+	footer {
+      background-color: #AEDCAE;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="image/logo.jpg" alt="Tropikawi Logo">
+    <span>Tropikawi</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attraction.html">Attraction</a>
+        <ul>
+          <li><a href="attraction-day.html">Day</a></li>
+          <li><a href="attraction-night.html">Night</a></li>
+          <li><a href="attraction-all.html">Day and Night</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Rental</a>
+        <ul>
+          <li><a href="rental-car.html">Car</a></li>
+          <li><a href="rental-motorcycle.html">Motorcycle</a></li>
+          <li><a href="rental-yacht.html">Yacht</a></li>
+        </ul>
+      </li>
+      <li><a href="tourist-activities.html">Tourist Activities</a>
+        <ul>
+          <li><a href="activity-water.html">Water Activities</a></li> 
+          <li><a href="activity-adventure.html">Adventure Activities</a></li>
+		  <li><a href="activity-wildlife.html">Wildlife Activities</a></li>
+		  <li><a href="activity-cultural.html">Cultural and Historical Activities</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Promotion Package</a>
+        <ul>
+          <li><a href="promo-activities.html">Activities</a></li>
+          <li><a href="promo-tour.html">Island Tour</a></li>
+          <li><a href="promo-spa.html">Treatment and Spa</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Accommodation</a>
+        <ul>
+          <li><a href="accommodation_recommended.html">Recommended</a></li>
+          <li><a href="accommodation_cheaper.html">Cheaper Prices</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<h1 style="font-family: 'Font Name', fallback; margin-top:60px; text-align: center;">Water Activities</h1>
+
+<div class="d-flex justify-content-center gap-4 flex-wrap" style="margin-top:60px;">
+
+  <div class="card me-3" style="width: 400px;">
+    <img class="card-img-top" src="image/pulau_payar.jpg" alt="Snorkeling" style="width: 100%; height: 250px; object-fit: cover;">
+    <div class="card-body">
+      <h4 class="card-title">Snorkeling at Pulau Payar Marine Park</h4>
+      <p class="card-text">Pulau Payar offers an unforgettable snorkeling escape, where nature puts on a spectacular show just beneath the waves.</p>
+      <a href="https://www.langkawigotours.com/pulau-payar-snorkeling-package/" target="_blank" class="btn" style="background-color: #AEDCAE; color: #004225;">Know more</a>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 400px;">
+    <img class="card-img-top" src="image/jet_ski.jpg" alt="Jet Ski" style="width: 100%; height: 250px; object-fit: cover;">
+    <div class="card-body">
+      <h4 class="card-title">Jet Ski</h4>
+      <p class="card-text">Jet skiing in Langkawi is an unforgettable way to splash through waves and explore the coastline. Available at Cenang, Tengah, and Tanjung Rhu.</p>
+      <a href="https://cprowatersports.com/?gad_source=1&gad_campaignid=22541416702&gbraid=0AAAAA_ke2CKcJUB0pgjMMFGgFUEK-yqEu&gclid=Cj0KCQjwgvnCBhCqARIsADBLZoKjRLoLmNMIULPz2yGOM2CjzVMWsT-N-mI8DWJ4nItpaOcU7b_Oxf0aAgOrEALw_wcB" target="_blank" class="btn" style="background-color: #AEDCAE; color: #004225;">Know more</a>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center gap-4 flex-wrap" style="margin-top:60px;">
+
+  <div class="card me-3" style="width: 400px;">
+    <img class="card-img-top" src="image/banana.jpg" alt="Banana Boat" style="width: 100%; height: 250px; object-fit: cover;">
+    <div class="card-body">
+      <h4 class="card-title">Ride on Banana Boat</h4>
+      <p class="card-text">Langkawi’s classic beach adventure! Available at Pantai Cenang and Pantai Tengah.</p>
+      <a href="https://www.langkawigotours.com/banana-ride-langkawi/" target="_blank" class="btn" style="background-color: #AEDCAE; color: #004225;">Know more</a>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 400px;">
+    <img class="card-img-top" src="image/dayang_bunting.jpg" alt="Pulau Dayang Bunting" style="width: 100%; height: 250px; object-fit: cover;">
+    <div class="card-body">
+      <h4 class="card-title">Visiting Dayang Bunting Island</h4>
+      <p class="card-text">Swim in the freshwater lake, enjoy paddle boats, and explore jungle trails surrounded by natural beauty.</p>
+      <a href="https://www.viator.com/en-MY/Langkawi-attractions/Dayang-Bunting-Island/d338-a15858" target="_blank" class="btn" style="background-color: #AEDCAE; color: #004225;">Know more</a>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center gap-4 flex-wrap" style="margin-top:60px;">
+
+  <div class="card me-3" style="width: 400px;">
+    <img class="card-img-top" src="image/kayak.jpg" alt="Kayaking" style="width: 100%; height: 250px; object-fit: cover;">
+    <div class="card-body">
+      <h4 class="card-title">Kayaking</h4>
+      <p class="card-text">Explore Langkawi’s mangroves and calm waters at Kilim Geoforest Park by kayak for a peaceful nature experience.</p>
+      <a href="https://www.getyourguide.com/langkawi-l903/langkawi-kilim-geoforest-mangrove-kayak-tour-with-lunch-t762497/?ranking_uuid=07a4dc40-6b5d-4deb-9eb8-c2cc9fe6ab9e" target="_blank" class="btn" style="background-color: #AEDCAE; color: #004225;">Know more</a>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 400px;">
+    <img class="card-img-top" src="image/cruise.jpg" alt="Sunset Cruise" style="width: 100%; height: 250px; object-fit: cover;">
+    <div class="card-body">
+      <h4 class="card-title">Sunset Cruises</h4>
+      <p class="card-text">Relax on a yacht with dinner and drinks while watching the sun set. Cruises depart from Telaga Harbour Marina and Cenang Beach.</p>
+      <a href="https://sunsetcruise.langkawi-tickets.com/?ci=1&cm=18541467780_145892991807_c_g_sunset%20cruise%20langkawi_e_&gad_source=1&gad_campaignid=18541467780&gbraid=0AAAAACRC4b0_jaDBif9DkZkL7BDvZUQXm&gclid=Cj0KCQjwgvnCBhCqARIsADBLZoLtkGODzBDCaBYk90PaJkgFHIncA_A_O9EIivNs1AhL5VffFpBPNDcaAiwdEALw_wcB" target="_blank" class="btn" style="background-color: #AEDCAE; color: #004225;">Know more</a>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center gap-4 flex-wrap" style="margin-top:60px;">
+
+  <div class="card me-3" style="width: 400px;">
+    <img class="card-img-top" src="image/waterfall.jpg" alt="Waterfall" style="width: 100%; height: 250px; object-fit: cover;">
+    <div class="card-body">
+      <h4 class="card-title">Swimming at Waterfall</h4>
+      <p class="card-text">Cool off naturally in Langkawi’s famous waterfalls like Seven Wells and Durian Perangin surrounded by rainforest beauty.</p>
+      <a href="https://www.getyourguide.com/langkawi-archipelago-l182642/langkawi-seven-wells-waterfalls-and-sacred-blue-pool-trip-t846091/?ranking_uuid=b684dd96-6aa5-4871-9606-0f20b355df1d" target="_blank" class="btn" style="background-color: #AEDCAE; color: #004225;">Know more</a>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+   
+  formbutton("create", {
+    action: "https://formspree.io/f/meokvbav",
+    title: "Send us your feedback",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Your feedback about our site:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#AEDCAE"
+      },
+      button: {
+        backgroundColor: "#AEDCAE"
+      }
+    }
+  });
+</script>
+
+<footer>
+    &copy; 2025 Tropikawi. All rights reserved. | www.tropikawi.com
+  </footer>
+
+</body>
+</html>

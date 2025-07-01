@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tropikawi: Cultural Activities</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+    }
+
+    header {
+      background-color: #AEDCAE;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .header-left img {
+      max-width: 60px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .header-left span {
+      font-size: 1.8rem;
+      font-family: 'Brush Script MT', cursive;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: #AEDCAE;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+
+    nav li ul li {
+      padding: 0.3rem 0;
+    }
+
+    .button-section {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 100px 0 40px 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .button {
+      text-decoration: none;
+      color: black;
+      background-color: #DDF2E0;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 220px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .button img {
+      width: 200px;
+      height: 200px;
+      border-radius: 4px;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+	
+	footer {
+      background-color: #AEDCAE;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+  </style> 
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="image/logo.jpg" alt="Tropikawi Logo">
+    <span>Tropikawi</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attraction.html">Attraction</a>
+        <ul>
+          <li><a href="attraction-day.html">Day</a></li>
+          <li><a href="attraction-night.html">Night</a></li>
+          <li><a href="attraction-all.html">Day and Night</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Rental</a>
+        <ul>
+          <li><a href="rental-car.html">Car</a></li>
+          <li><a href="rental-motorcycle.html">Motorcycle</a></li>
+          <li><a href="rental-yacht.html">Yacht</a></li>
+        </ul>
+      </li>
+      <li><a href="tourist-activities.html">Tourist Activities</a>
+        <ul>
+          <li><a href="activity-water.html">Water Activities</a></li>
+		  <li><a href="activity-adventure.html">Adventure Activities</a></li>
+		  <li><a href="activity-wildlife.html">Wildlife Activities</a></li>
+          <li><a href="activity-cultural.html">Cultural and Historical Activities</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Promotion Package</a>
+        <ul>
+          <li><a href="promo-activities.html">Activities</a></li>
+          <li><a href="promo-tour.html">Island Tour</a></li>
+          <li><a href="promo-spa.html">Treatment and Spa</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Accommodation</a>
+        <ul>
+          <li><a href="accommodation_recommended.html">Recommended</a></li>
+          <li><a href="accommodation_cheaper.html">Cheaper Prices</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<h1 style="font-family: 'Font Name', fallback; margin-top:60px; margin-bottom:40px; text-align:center;">Island Tour Promotion Packages</h1>
+
+<div style="display: flex; justify-content: center; gap: 20px; margin-top: 60px;">
+   <video width="80%" height="400px" autoplay muted loop style="border-radius: 12px;">
+      <source src="media/video tour.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<div style="margin-top: 50px; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; padding: 30px;">
+
+  <div style="width: 24%; background: #AEDCAE; padding: 10px; border-radius: 10px; box-shadow: 0 0 8px black; text-align: center;">
+    <img src="image/island 1.png" style="width:250px; height:auto; display:block; margin: 10px auto; border:5px solid gray; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+</a>
+    <h3 style="color: Black; text-align:center;">Package 1<br>(5 Seater, 6 Hours Private Boat, Island Hopping + BBQ Lunch)</h3>
+<p style="text-align: center; margin-top:5px;">
+<p>RM680</p>
+<p style="text-align:justify;">
+Activities:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Pulau Payar (Snorkeling & Swimming)<br>&#9679;Pulau Dayang Bunting (Sea Scooter)<br>&#9679;Pulau Singa Besar (Eagle Feeding)<br>&#9679;BBQ Lunch at Crystal Island Restaurant
+<p style="text-align:justify;">
+Lunch Menu:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Southern Fried Okra<br>&#9679;Steak<br>&#9679;Melting Potatoes<br>&#9679;Grilled Corn On The Cob<br>&#9679;Shrimp Pasta Salad<br>&#9679;Citrus BBQ Chicken
+<p style="text-align:justify;">
+Reminder:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Maximum 5 passengers<br>&#9679;Duration: 6 hours<br>&#9679;Departure time: 9am - 15pm<br>&#9679;Departure point: Jetty City Island<br>&#9679;Please arrive 30 minutes before departure time
+</p>
+   </div>
+<div style="width: 24%; background: #AEDCAE; padding: 10px; border-radius: 10px; box-shadow: 0 0 8px black; text-align: center;">
+    <img src="image/island 2.png" style="width:250px; height:auto; display:block; margin: 10px auto; border:5px solid gray; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+</a>
+    <h3 style="color: Black; text-align:center;">Package 2<br>(6 Seater, 6 Hours Private Boat, Island Hopping + BBQ Lunch)</h3>
+<p style="text-align: center; margin-top:5px;">
+<p>RM830</p>
+<p style="text-align:justify;">
+Activities:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Pulau Payar (Snorkeling & Swimming)<br>&#9679;Pulau Dayang Bunting (Sea Scooter)<br>&#9679;Pulau Singa Besar (Eagle Feeding)<br>&#9679;BBQ Lunch at Crystal Island Restaurant
+<p style="text-align:justify;">
+Lunch Menu:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Southern Fried Okra<br>&#9679;Steak<br>&#9679;Melting Potatoes<br>&#9679;Grilled Corn On The Cob<br>&#9679;Shrimp Pasta Salad<br>&#9679;Citrus BBQ Chicken
+<p style="text-align:justify;">
+Reminder:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Maximum 6 passengers<br>&#9679;Duration: 6 hours<br>&#9679;Departure time: 9am - 15pm<br>&#9679;Departure point: Jetty City Island<br>&#9679;Please arrive 30 minutes before departure time
+</p>
+   </div>
+<div style="width: 24%; background: #AEDCAE; padding: 10px; border-radius: 10px; box-shadow: 0 0 8px black; text-align: center;">
+    <img src="image/island 3.png" style="width:250px; height:auto; display:block; margin: 10px auto; border:5px solid gray; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+</a>
+    <h3 style="color: Black; text-align:center;">Package 3<br>(10 Seater, 6 Hours Private Boat, Island Hopping + BBQ Lunch)</h3>
+<p style="text-align: center; margin-top:5px;">
+<p>RM920</p>
+<p style="text-align:justify;">
+Activities:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Pulau Payar (Snorkeling & Swimming)<br>&#9679;Pulau Dayang Bunting (Sea Scooter)<br>&#9679;Pulau Singa Besar (Eagle Feeding)<br>&#9679;BBQ Lunch at Crystal Island Restaurant
+<p style="text-align:justify;">
+Lunch Menu:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Southern Fried Okra<br>&#9679;Steak<br>&#9679;Melting Potatoes<br>&#9679;Grilled Corn On The Cob<br>&#9679;Shrimp Pasta Salad<br>&#9679;Citrus BBQ Chicken
+<p style="text-align:justify;">
+Reminder:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Maximum 10 passengers<br>&#9679;Duration: 6 hours<br>&#9679;Departure time: 9am - 15pm<br>&#9679;Departure point: Jetty City Island<br>&#9679;Please arrive 30 minutes before departure time
+</p>
+   </div>
+<div style="margin-top: 40px;width: 24%; background: #AEDCAE; padding: 10px; border-radius: 10px; box-shadow: 0 0 8px black; text-align: center;">
+    <img src="image/island 4.png" style="width:250px; height:auto; display:block; margin: 10px auto; border:5px solid gray; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+</a>
+    <h3 style="color: Black; text-align:center;">Package 4<br>(10 Seater, 6 Hours Private Boat, Island Hopping + BBQ Lunch)</h3>
+<p style="text-align: center; margin-top:5px;">
+<p>RM1240</p>
+<p style="text-align:justify;">
+Activities:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Pulau Payar (Snorkeling & Swimming)<br>&#9679;Pulau Dayang Bunting (Sea Scooter)<br>&#9679;Pulau Singa Besar (Eagle Feeding)<br>&#9679;BBQ Lunch at Crystal Island Restaurant
+<p style="text-align:justify;">
+Lunch Menu:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Southern Fried Okra<br>&#9679;Steak<br>&#9679;Melting Potatoes<br>&#9679;Grilled Corn On The Cob<br>&#9679;Shrimp Pasta Salad<br>&#9679;Citrus BBQ Chicken
+<p style="text-align:justify;">
+Reminder:
+<p style="text-align:justify; font-size: 16px; margin: 10px;">
+<br>&#9679;Maximum 15 passengers<br>&#9679;Duration: 6 hours<br>&#9679;Departure time: 9am - 15pm<br>&#9679;Departure point: Jetty City Island <br>&#9679;Please arrive 30 minutes before departure time
+</p>
+   </div>
+   </div>
+
+<br><br><br>    
+  <footer>
+    &copy; 2025 Tropikawi. All rights reserved. | www.tropikawi.com
+  </footer>     
+
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+   
+  formbutton("create", {
+    action: "https://formspree.io/f/meokvbav",
+    title: "Send us your feedback",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Your feedback about our site:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#AEDCAE"
+      },
+      button: {
+        backgroundColor: "#AEDCAE"
+      }
+    }
+  });
+</script>
+</body>
+</html>

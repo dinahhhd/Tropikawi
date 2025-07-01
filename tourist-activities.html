@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tropikawi: Tourist Activities</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+    }
+
+    header {
+      background-color: #AEDCAE;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .header-left img {
+      max-width: 60px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .header-left span {
+      font-size: 1.8rem;
+      font-family: 'Brush Script MT', cursive;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: #AEDCAE;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+
+    nav li ul li {
+      padding: 0.3rem 0;
+    }
+
+    .slideshow-container {
+      width: 100%;
+      height: 90vh;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    .text {
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      color: black;
+      font-size: 20px;
+      background-color: rgba(255,255,255,0.7);
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    .button-section {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 100px 0 40px 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .button {
+      text-decoration: none;
+      color: black;
+      background-color: #DDF2E0;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 220px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .button img {
+      width: 200px;
+      height: 200px;
+      border-radius: 4px;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+	
+	    footer {
+      background-color: #AEDCAE;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="image/logo.jpg" alt="Tropikawi Logo">
+    <span>Tropikawi</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attraction.html">Attraction</a>
+        <ul>
+          <li><a href="attraction-day.html">Day</a></li>
+          <li><a href="attraction-night.html">Night</a></li>
+          <li><a href="attraction-all.html">Day and Night</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Rental</a>
+        <ul>
+          <li><a href="rental-car.html">Car</a></li>
+          <li><a href="rental-motorcycle.html">Motorcycle</a></li>
+          <li><a href="rental-yacht.html">Yacht</a></li>
+        </ul>
+      </li>
+      <li><a href="tourist-activities.html">Tourist Activities</a>
+        <ul>
+          <li><a href="activity-water.html">Water Activities</a></li>
+		  <li><a href="activity-adventure.html">Adventure Activities</a></li>
+		  <li><a href="activity-wildlife.html">Wildlife Activities</a></li>
+          <li><a href="activity-cultural.html">Cultural and Historical Activities</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Promotion Package</a>
+        <ul>
+          <li><a href="promo-activities.html">Activities</a></li>
+          <li><a href="promo-tour.html">Island Tour</a></li>
+          <li><a href="promo-spa.html">Treatment and Spa</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Accommodation</a>
+        <ul>
+          <li><a href="accommodation_recommended.html">Recommended</a></li>
+          <li><a href="accommodation_cheaper.html">Cheaper Prices</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main id="tourist-activities">
+  <h1 style="font-family: 'Font Name', fallback; margin-top:60px; margin-bottom:40px; text-align:center;">Tourist Activities in Langkawi</h1>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="image/eagle.jpg" alt="Famous eagle statue at Langkawi" style="width:100%">
+      <div class="text">Looking for unforgettable experiences in Langkawi? You're in the right place!</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="image/langkawi_3.jpg" alt="Langkawi" style="width:100%">
+      <div class="text">Explore Langkawi’s natural beauty from sunrise to sunset.</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="image/langkawi_2.jpg" alt="Langkawi" style="width:100%">
+      <div class="text">Adventure awaits in every corner of Langkawi!</div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top: 1rem;">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <br><br>
+  <p style="text-align:center;">From thrilling water sports to peaceful cultural walks, Langkawi has everything for everyone.</p>
+  <br>
+  <p style="text-align:center;">Get ready to dive into adventure, explore nature, and discover the true spirit of Langkawi.</p>
+  <br>
+  <p style="text-align:center;">Whether you’re a thrill-seeker, nature lover, or history enthusiast, Langkawi is your ultimate playground.</p>
+  <br>
+  <p style="text-align:center;">What are you waiting for? Click the links below to explore various activities in Langkawi! <img src="image/ducklove.gif" alt="Duck giving a lot of love" style="width:48px;height:48px;"></p>
+
+  <div class="button-section">
+    <a href="activity-water.html" class="button">
+      <img src="image/water.jpg" alt="Water Activities">
+      <p>Water Activities</p>
+    </a>
+    <a href="activity-adventure.html" class="button">
+      <img src="image/adventure.jpg" alt="Adventure Activities">
+      <p>Adventure & Outdoor</p>
+    </a>
+	<a href="activity-wildlife.html" class="button">
+      <img src="image/2.jpg" alt="Wildlife Activities">
+      <p>Wildlife Activities</p>
+    </a>
+    <a href="activity-cultural.html" class="button">
+      <img src="image/historical.png" alt="Cultural Activities">
+      <p>Cultural & Historical Sites</p>
+    </a>
+  </div>
+</main>
+
+<h1 style="font-family: 'Font Name', fallback; margin-top:100px; margin-bottom:40px; text-align:center;"> Watch Video About The Top Things to Do in Langkawi  </h1>
+<div style="text-align: center;">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/VQZu2DoARG4?si=bfdPeqAH1OqvmUpX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen"></iframe>
+</div>
+
+
+<br><br><br>
+
+
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+   
+  formbutton("create", {
+    action: "https://formspree.io/f/meokvbav",
+    title: "Send us your feedback",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Your feedback about our site:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#AEDCAE"
+      },
+      button: {
+        backgroundColor: "#AEDCAE"
+      }
+    }
+  });
+</script>
+
+  <footer>
+    &copy; 2025 Tropikawi. All rights reserved. | www.tropikawi.com
+  </footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+</script>
+
+</body>
+</html>
